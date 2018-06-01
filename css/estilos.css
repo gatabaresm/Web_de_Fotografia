@@ -59,6 +59,17 @@ img{box-shadow: 2px 2px 4px #02010a}
 		transform: translate(20px, -5px);
 }
 
+/*Animatción para producir un rebote en la página cuando se accede a ella*/
+.c1 {
+	transition: background 0s;
+	animation: rebote 1.5s;
+}
+@-webkit-keyframes rebote {
+	0%{ margin-top: 150% }
+	60%{ margin-top: -5% }
+	100%{ margin-top: 0%}
+}
+
 @media all and (max-width: 899px){
   .contenido { width: 100%; margin: 0 auto; text-align: center;}
 	.c1 { width:100%; border-radius: 10px 10px 0px 0px; }
